@@ -113,6 +113,14 @@
             android:readPermission="com.galvaniytechnologies.messages.READ_INBOX"
             android:writePermission="com.galvaniytechnologies.messages.WRITE_INBOX" />
 
+        <receiver
+            android:name=".util.SmsRetrieverBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

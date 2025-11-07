@@ -111,5 +111,6 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.security.crypto)
+    implementation(libs.play.services.auth.api.phone)
 
 }
